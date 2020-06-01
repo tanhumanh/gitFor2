@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Bt3</title>
+	<title>Bt4</title>
 </head>
 <body>
 	<script>
@@ -10,12 +10,18 @@
 		let a = 0;
 		let b = 1;
 		let temp = "";
-		for(i=0 ; i <20; i++){
-		   temp = a + b;
-		   a = b;
-		   b = temp ;
-		   document.write(temp + "<br>");
+		for(i=0 ; i<20; i++){
+			temp = a + b;
+			a = b;
+			b = temp;
+			if( temp %5 ==0){
+				document.write(temp);
+				break;
+			}
+
 		}
+		
+
 	</script>
 
 </body>
