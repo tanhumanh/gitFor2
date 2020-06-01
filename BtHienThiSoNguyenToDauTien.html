@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		let sout;
+		let result;
+		sout = "<table border = '1' width='300' cellpadding='3' cellspacing='0'>";
+		for(i=1 ; i <= 10 ; i ++){
+			sout = sout + "<tr>";
+			for(j=2 ; j <=9 ; j ++){
+				result = i * j ;
+				sout = sout + " <td sytle = 'text-align: center'>" + j + "x" + i + "=" + result + "</td>";
+			}
+			sout = sout + "<tr>"
+		}
+		sout = sout + "</table>"
+		document.write(sout);
+	</script>
+
+</body>
+</html>

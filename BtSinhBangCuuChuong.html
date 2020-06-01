@@ -2,23 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-	<title>Sinh Bang Cuu Chuong</title>
+	<title></title>
 </head>
 <body>
     <script>
-        let result;
-        let sout;
-        sout = "<table border='1' width='300' cellpadding='3' cellspacing='0'>";
-        for(i = 1; i <=10 ; i++){
-            sout = sout + "<tr>";
-            for(j=2; j <=9; j++){
-                result = i *j;
-                sout = sout + "<td style = 'text-align: center'>" + j + "x" + i + "=" + result + "</td>";
+       let num =+prompt('nhap sl');
+       count = 1;
+       number = 2;
+       while(count<=num){
+        if(number==2){
+            document.write(number+"<br>");
+            number++;
+            count++;//do TH nay dung nen mat 1 lan dem, phai cong them 1 lan dem.
+
+        } else{
+            let flag = true;
+           for(let i=2; i<number; i++){
+            if(number %i ==0){
+                flag = false;
+
             }
-            sout = sout + "<tr>";
+           }
+           if(flag){
+            document.write(number +"<br>");
+            count++;
+           }
+           number++;
         }
-        sout = sout + "</table>";
-        document.write(sout)
+
+       }
     </script>
 
 </body>
